@@ -16,7 +16,9 @@ router.get('/bulbs', async (req, res) => {
 });
 
 router.get('/bulbs/:id', async (req, res) => {
+  console.log("id'et er : " + id + " før vi henter det"); 
   lightbulb = await getDataById.getDataById(req.params.id);
+  console.log("id'et er nu: " + id + " efter det er hentet");
   res.json(lightbulb);
 });
 
