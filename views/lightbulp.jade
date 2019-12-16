@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1(class="header") Liste over pærere 
+  p her kan du se listen over pærerne 
+
+  table(style="width:100%")
+    tr(class="headerbox")
+        th _id
+        th hardwarenumber
+        th name
+        th status
+        th lightintensity
+        th poweruse
+        th color
+        th softwareversion
+    each bulb in bulbs
+        tr(class="databox")
+            td=bulb._id
+            td=bulb.hardwarenumber
+            td=bulb.name
+            td=bulb.status
+            td=bulb.lightintensity
+            td=bulb.poweruse
+            td=bulb.color
+            td=bulb.softwareversion

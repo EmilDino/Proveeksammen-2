@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header {
+  display: block;
+  margin-right: auto;
+  background-color:green; 
+  color:white;
+  padding: 2px;
+  width: 25vw;
+}
+
+.headerbox{
+  text-align: center;
+  background-color: orange;
+  border-radius: 25px 25px 25px 25px; 
+  padding: 20px; 
+}
+
+.databox{
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 25px 25px 25px 25px; 
+  padding: 20px; 
+}
+
+.button{
+  border-radius: 8px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #024260;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+} 
+
+.button:hover {
+  background-color: #024260;
+  color: white;
+}
+
+.button:active{
+  background-color: #024260;
+  color: white;
+  transform: translateY(4px);
+}
